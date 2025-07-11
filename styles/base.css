@@ -147,7 +147,8 @@ p {
 }
 /***************** FOOTER ******************/
 footer {
-    background-color: #eeee;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     padding: 1rem 10px;
     text-align: center;
 }
