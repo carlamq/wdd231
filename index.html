@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page | WDD231 | CMRQ</title>
+    <meta name="description" content="Student home page related to the course WDD231.">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Nunito:wght@200..1000&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="images/index-logo.svg" alt="Site Logo" width="500" height="500">
+        <span>WDD231 | Carla R. Quintanar</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="cards">
+            <section class="card-1">
+                <h2>About me</h2>
+                <p>My name is Carla Maetzin Ramirez Quintanar, and I am a student at Pathway, BYU-Idaho studying Web and Software Development.
+                    I am Mexican, and now living in Japan. I can speak Spanish, English, and Japanese. I am passionate about learning new things, and I want to create websites and applications that can help people in their daily lives.</p>
+            </section>
+            <section class="card-2">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student Photo" width="290" height="300">
+            </section>
+        </div>
+        <section class="courses-list">
+            <h2>Web Certification Courses</h2>
+            <nav class="nav-courses">
+                <ul>
+                    <li><a id="all">All</a></li>
+                    <li><a id="cse">CSE</a></li>
+                    <li><a id="wdd">WDD</a></li>
+                </ul>
+            </nav>
+            <div id="courses-array"></div>
+            <p id="total-credits"></p>
+        </section>
+        <div class="social">
+            <a href="https://github.com/carlamq/cse210-hw.git" target="_blank"><img src="images/github.svg" alt="github" width="32" height="32"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linked.svg" alt="linkedin" width="32" height="32"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="x" width="32" height="32"></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Carla Maetzin Ramirez Quintanar | Mexico</p>
+        <p class="last-mod">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

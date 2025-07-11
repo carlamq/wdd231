@@ -1,0 +1,52 @@
+@media (min-width: 740px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 44px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    #courses-array {
+        grid-template-columns: 1fr 1fr;
+    }
+    .social a {
+        margin-bottom: 1rem;
+    }
+    .cards {
+        grid-template-columns: 60% 40%;
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+}
+@media (min-width: 1024px) {
+
+    #courses-array {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+}
