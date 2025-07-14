@@ -1,0 +1,30 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+header {
+    color: #350a84;
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(204, 187, 222);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #350a84;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
