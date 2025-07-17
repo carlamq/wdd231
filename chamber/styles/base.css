@@ -98,16 +98,29 @@ main {
     padding: 1rem 10px;
 }
 
-#list-view {
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#grid,
+#list {
     background: var(--secondary-color);
     color: var(--background-color);
     border: none;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0 0 0;
+    padding: 1rem 2rem;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 1rem;
 }
-
+#grid:hover,
+#list:hover {
+    background: var(--card-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
 #directory-cards.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));

@@ -1,17 +1,23 @@
 const container = document.getElementById('directory-cards');
-const listBtn = document.getElementById('list-view');
-let gridView = true; // control the actual view mode
-// Initialize the view mode to grid
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
 
 let currentMembers = [];//store the JSON data for dont do fetch again
 container.className = 'grid'; //Set the CSS initial class to grid
 
-listBtn.addEventListener('click', () => {
-    gridView = !gridView; //change true to false and vice versa
-    container.className = gridView ? 'grid' : 'list'; //Control what CSS class to use
-    listBtn.textContent = gridView ? 'View as a List' : 'View as Grid'; //change the text in the button
-    renderMembers(currentMembers);//reender with the same HTML but different CSS
+gridButton.addEventListener("click", () => {
+    container.classList.add("grid");
+    container.classList.remove("list");
+    renderMembers(currentMembers);
 });
+
+listButton.addEventListener("click", showList);
+
+function showList() {
+    container.classList.add("list");
+    container.classList.remove("grid");
+    renderMembers(currentMembers);
+}
 
 const fetchMembers = async () => {
     try {
@@ -26,8 +32,17 @@ const fetchMembers = async () => {
     }
 }
 
+function levelLabel(level) {
+    switch (level) {
+        case 3: return 'Gold';
+        case 2: return 'Silver';
+        default: return 'Member';
+    }
+}
+
 function renderMembers(members) {
-    if (gridView) {
+    // ✅ Simplificar la lógica - ahora usar las clases CSS directamente
+    if (container.classList.contains('grid')) {
         container.innerHTML = members.map(m =>
             `<div class="member-card">
                 <img src="${m.image}" alt="${m.name}" loading="lazy" width="70" height="70"/>
@@ -37,12 +52,12 @@ function renderMembers(members) {
                 <div>${m.phone}</div>
                 <a href="${m.website}" target="_blank">${m.website}</a>
                 <div class="level">${levelLabel(m.membership_level)}</div>
-                <div>${m.description}</div>
-                <div><em>${m.industry}</em></div>
+                <div>${m.description || ''}</div>
+                <div><em>${m.industry || ''}</em></div>
             </div>`
-        ).join('');//<div><em>${m.industry || ''}</em></div> can use in case that the array is long and do not contain some elements, can be null too
+        ).join('');
     } else {
-        container.innerHTML = members.map(m =>//map for run for every element in the array
+        container.innerHTML = members.map(m =>
             `<div class="member-card">
                 <img src="${m.image}" alt="${m.name}" loading="lazy" width="50" height="50"/>
                 <h2>${m.name}</h2>
@@ -52,14 +67,6 @@ function renderMembers(members) {
                 <span class="level">${levelLabel(m.membership_level)}</span>
             </div>`
         ).join('');
-    }
-}
-
-function levelLabel(level) {
-    switch (level) {
-        case 3: return 'Gold Member';
-        case 2: return 'Silver Member';
-        default: return 'Member';
     }
 }
 

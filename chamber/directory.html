@@ -25,7 +25,7 @@
     <header>
         <img src="images/chamber-logo.png" alt="Site Logo" width="120" height="120">
         <span>WDD231 | Kashiwa Chamber of Commerce</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
     </header>
     <nav id="nav-bar">
         <ul>
@@ -38,7 +38,10 @@
     <main>
         <h1>Business Directory</h1>
         <p>Welcome to the Chamber of Commerce Business Directory. Here you can find a list of our members and their businesses.</p>
-        <button id="list-view">View as a List</button>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
         <div id="directory-cards"></div>
     </main>
     <footer>
