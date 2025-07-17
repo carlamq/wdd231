@@ -63,20 +63,20 @@ header span {
     content: "\2716";
 }
 /*************** NAVIGATION ******************/
-.navigation {
+nav {
     display: none;
     background-color: var(--primary-color);
 }
 
-.navigation.show {
+nav.show {
     display: block;
 }
 
-.navigation ul {
+nav ul {
     list-style-type: none;
 }
 
-.navigation a {
+nav a {
     display: block;
     padding: 1rem 10px;
     color: var(--background-color);
@@ -84,12 +84,12 @@ header span {
     border-bottom: solid 1px #dddd;
 }
 
-.navigation a:hover {
+nav a:hover {
     background-color: var(--card-color);
     color: var(--text-color);
 }
 
-.navigation li.current a {
+nav li.current a {
     background-color: var(--secondary-color);
 }
 

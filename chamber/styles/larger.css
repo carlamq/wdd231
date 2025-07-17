@@ -21,14 +21,14 @@
     .hamburger {
         display: none;
     }
-    .navigation {
+    nav {
         display: block;
     }
-    .navigation ul {
+    nav ul {
         display: flex;
         justify-content: space-around;
     }
-    .navigation a {
+    nav a {
         border: none;
     }
     footer {
