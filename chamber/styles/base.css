@@ -19,18 +19,14 @@ body {
 }
 
 /********* HEADER **********/
-header,
-footer {
-    padding: 1rem 10px;
-    border-bottom: solid 1px var(--card-color);
-}
-
 header {
     display: grid;
     grid-template-columns: 1fr 44px;
     grid-template-rows: auto auto;
     align-items: center;
     gap: 0.25rem;
+    padding: 1rem 10px;
+    border-bottom: solid 1px var(--card-color);
 }
 
 header img {
@@ -112,10 +108,10 @@ main {
     border-radius: 5px;
 }
 
-#directory-cards.grid{
+#directory-cards.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem;
 }
 
@@ -145,15 +141,6 @@ main {
     line-height: 1.6;
     text-align: center;
 }
-
-.member-card .jp {
-    font-family: 'Yuji Syuku', serif;
-    font-size: 1.5rem;
-}
-.member-card:hover {
-    box-shadow: 0 4px 24px var(--card-shadow);
-}
-
 .member-card img {
     width: 70px;
     height: 70px;
@@ -184,6 +171,7 @@ footer {
     text-align: center;
     line-height: 1.5;
     border: none;
+    padding: 1rem 10px;
 }
 
 footer h3,

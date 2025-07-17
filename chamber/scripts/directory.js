@@ -32,7 +32,7 @@ function renderMembers(members) {
             `<div class="member-card">
                 <img src="${m.image}" alt="${m.name}" loading="lazy"/>
                 <h2>${m.name}</h2>
-                <div class="jp">${m.name_jp}</div>
+                <div>${m.name_jp}</div>
                 <div>${m.address}</div>
                 <div>${m.phone}</div>
                 <a href="${m.website}" target="_blank">${m.website}</a>
