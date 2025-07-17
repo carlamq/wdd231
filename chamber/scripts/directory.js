@@ -30,7 +30,7 @@ function renderMembers(members) {
     if (gridView) {
         container.innerHTML = members.map(m =>
             `<div class="member-card">
-                <img src="${m.image}" alt="${m.name}" loading="lazy"/>
+                <img src="${m.image}" alt="${m.name}" loading="lazy" width="70" height="70"/>
                 <h2>${m.name}</h2>
                 <div>${m.name_jp}</div>
                 <div>${m.address}</div>
@@ -44,7 +44,7 @@ function renderMembers(members) {
     } else {
         container.innerHTML = members.map(m =>//map for run for every element in the array
             `<div class="member-card">
-                <img src="${m.image}" alt="${m.name}" loading="lazy"/>
+                <img src="${m.image}" alt="${m.name}" loading="lazy" width="50" height="50"/>
                 <h2>${m.name}</h2>
                 <span>${m.phone}</span>
                 <span class="address">${m.address}</span>
