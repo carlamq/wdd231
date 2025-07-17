@@ -186,6 +186,7 @@ footer {
     line-height: 1.5;
     border: none;
     padding: 1rem 10px;
+    display: block;
 }
 
 .social {
