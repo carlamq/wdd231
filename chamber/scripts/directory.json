@@ -5,7 +5,7 @@
         "address": "〒277-0005 Chiba, Kashiwa, 3 Chome-8-12",
         "phone": "07032671210",
         "website": "https://x.com/10318103shohei",
-        "image": "images/ramenibuto.jpg",
+        "image": "images/ramenibuto.webp",
         "membership_level": 3,
         "description": "Authentic ramen shop specializing in tonkotsu ramen.",
         "industry": "Food & Beverage"
@@ -16,7 +16,7 @@
         "address": "1 Chome-7-11 Asahicho, Kashiwa, Chiba 277-0852",
         "phone": "0471459700",
         "website": "http://www.ra-menhomare.com/",
-        "image": "images/homare.jpg",
+        "image": "images/homare.webp",
         "membership_level": 3,
         "description": "Ramen shop specializing in rich tonkotsu-miso ramen.",
         "industry": "Food & Beverage"
