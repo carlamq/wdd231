@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Ramen Ibuto",
+        "name_jp": "ラーメン猪太",
+        "address": "〒277-0005 Chiba, Kashiwa, 3 Chome-8-12",
+        "phone": "07032671210",
+        "website": "https://x.com/10318103shohei",
+        "image": "images/ramenibuto.jpg",
+        "membership_level": 3,
+        "description": "Authentic ramen shop specializing in tonkotsu ramen.",
+        "industry": "Food & Beverage"
+    },
+    {
+        "name": "Homare",
+        "name_jp": "こってりらーめん誉",
+        "address": "1 Chome-7-11 Asahicho, Kashiwa, Chiba 277-0852",
+        "phone": "0471459700",
+        "website": "http://www.ra-menhomare.com/",
+        "image": "http://www.ra-menhomare.com/wp-content/uploads/pic01.jpg",
+        "membership_level": 3,
+        "description": "Ramen shop specializing in rich tonkotsu-miso ramen.",
+        "industry": "Food & Beverage"
+    },
+    {
+        "name": "Olutana pilates",
+        "name_jp": "オルタナピラティス",
+        "address": "〒277-0842 Chiba, Kashiwa, Suehirocho, 15-4",
+        "phone": "0471459700",
+        "website": "https://www.olutana-pilates.com/",
+        "image": "https://www.olutana-pilates.com/images/img_02.png",
+        "membership_level": 1,
+        "description": "Vegan-friendly café with garden terrace.",
+        "industry": "Hospitality"
+    },
+    {
+        "name": "Kashiwa Yoga Studio",
+        "name_jp": "柏ヨガスタジオ",
+        "address": "3-19-10 Kashiwa, Kashiwa-shi, Chiba 277-0005",
+        "phone": "+81-4-7162-4567",
+        "website": "https://yuga-kashiwa.com/",
+        "image": "https://yuga-kashiwa.com/wp/wp-content/themes/original/images/catch/catch_feature.jpg",
+        "membership_level": 2,
+        "description": "Mindfulness and fitness classes in English and Japanese.",
+        "industry": "Wellness"
+    },
+    {
+        "name": "Rappor Kashiwa Hair Salon",
+        "name_jp": "ラポール柏",
+        "address": "〒277-0005 Chiba, Kashiwa, 2 Chome-9",
+        "phone": "0471795566",
+        "website": "https://rappor2014.com/",
+        "image": "https://rappor2014.com/wp-content/uploads/2022/03/IMG_2952.jpg",
+        "membership_level": 1,
+        "description": "Beauty salon offering a range of hair services.",
+        "industry": "Beauty & Personal Care"
+    },
+    {
+        "name": "ALEGRIA kashiwa",
+        "name_jp": "アレグリア柏",
+        "address": "〒277-0005 Chiba, Kashiwa, 3 Chome-6-21 Kashiwa Bld., 2F",
+        "phone": "+81-4-7167-6789",
+        "website": "https://alegria-kashiwa.owst.jp/",
+        "image": "https://cdn.r-corona.jp/prd.rb.r-corona.jp/assets/site_files/dx518bvf/57052834/w6b9_w500h500.jpg",
+        "membership_level": 3,
+        "description": "Restaurant specializing in Mediterranean cuisine.",
+        "industry": "Food & Beverage"
+    },
+    {
+        "name": "THE LIFE",
+        "name_jp": "The Life",
+        "address": "〒277-0005 Chiba, Kashiwa, 1 Chome-1-8 K18ビル 2F",
+        "phone": "+81-4-7168-7890",
+        "website": "https://the-life.gorp.jp/",
+        "image": "https://rimage.gnst.jp/rest/img/cnptk8hy0000/s_0n6s.jpg?dt=1729166247",
+        "membership_level": 2,
+        "description": "Modern café and bar with a relaxed atmosphere.",
+        "industry": "Food & Beverage"
+    }
+]

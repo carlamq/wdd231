@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory</title>
+    <meta name="description" content="Directory of Chamber Members Project Activity">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="icon" href="images/favicon-chamber.ico">
+    <meta property="og:title" content="WDD231 | Chamber Directory | Carla Maetzin Ramirez Quintanar">
+    <meta property="og:description" content="Student project, directory of chamber members.">
+    <meta property="og:image" content="images/socialmedia.png">
+    <meta property="og:url" content="https://carlamq.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yuji+Syuku&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="images/chamber-logo.png" alt="Site Logo" width="500" height="500">
+        <span>WDD231 | Kashiwa Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li class="current"><a href="#">Business Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Business Directory</h1>
+        <p>Welcome to the Chamber of Commerce Business Directory. Here you can find a list of our members and their businesses.</p>
+        <button id="list-view">View as a List</button>
+        <div id="directory-cards"></div>
+    </main>
+    <footer>
+        <section>
+            <h3>Kashiwa Chamber of Commerce</h3>
+            <p>Kashiwa, Chiba, Japan</p>
+            <p>7-1-1 Kashiwa, Chiba 277-0005</p>
+            <p>info@kashiwa-chamber.com</p>
+            <p>Phone: +81-4-7167-1234</p>
+        </section>
+        <section class="social">
+            <a href="https://youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube logo" width="32" height="32"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linked.svg" alt="linkedin" width="32" height="32"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="x page logo" width="32" height="32"></a>
+        </section>
+        <section>
+            <p>WDD231 | Class Project</p>
+            <p>Carla Maetzin Ramirez Quintanar</p>
+            <p>&copy; <span id="currentYear"></span> | Kashiwa Chamber of Commerce</p>
+            <p class="last-mod">Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@media (min-width: 740px) {
+    #directory-cards.list .list-info img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+    #directory-cards.list .list-info {
+        grid-template-columns: 60px 2fr 1fr 1fr 100px 1fr;
+    }
+    #directory-cards.list .list-info .address {
+        display: block;
+        font-size: 0.9rem;
+    }
+    header span {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation a {
+        border: none;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
