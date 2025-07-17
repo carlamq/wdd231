@@ -19,12 +19,16 @@ body {
 }
 
 /********* HEADER **********/
+header,
+footer {
+    padding: 1rem 10px;
+    border-bottom: solid 1px var(--card-color);
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 44px;
-    padding: 5px 0 5px 10px;
     align-items: center;
-    border-bottom: solid 1px var(--card-color);
 }
 
 header img {
@@ -55,11 +59,11 @@ header span {
     border: none;
     color: var(--text-color);
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .hamburger::before {
     content: "\2630";
-    font-size: 1.5rem;
 }
 
 .hamburger.show::before {
@@ -96,7 +100,6 @@ header span {
 
 .navigation li.current a {
     background-color: var(--secondary-color);
-    color: var(--background-color);
 }
 
 /************ MAIN CONTENT ***********/
@@ -114,37 +117,33 @@ main {
     border-radius: 5px;
 }
 
-#directory-cards.grid {
+#directory-cards.grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 2rem;
     padding: 2rem;
 }
 
-#directory-cards.list .list-info {
+#directory-cards.list .member-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    align-items: center;
     padding: 0.75rem 1rem;
-    background: var(--card-color);
-    border-radius: 8px;
-    border-bottom: 1px solid var(--primary-color);
     text-align: left;
 }
 
-#directory-cards.list .list-info img,
-#directory-cards.list .list-info .address {
+#directory-cards.list .member-card img,
+#directory-cards.list .member-card .address {
     display: none;
 }
 
-#directory-cards.list .list-info h2 {
+#directory-cards.list .member-card h2 {
     margin: 0;
     font-size: 1.1rem;
 }
 
-#directory-cards.list .list-info span,
-#directory-cards.list .list-info a {
+#directory-cards.list .member-card span,
+#directory-cards.list .member-card a {
     font-size: 1rem;
     margin: 0;
 }
@@ -154,11 +153,8 @@ main {
     border-radius: 4px;
     box-shadow: 0 2px 15px var(--card-shadow);
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     line-height: 1.6;
+    text-align: center;
 }
 
 .member-card .jp {
@@ -192,9 +188,9 @@ main {
 footer {
     background: var(--primary-color);
     color: var(--background-color);
-    padding: 2rem 10px;
     text-align: center;
     line-height: 1.5;
+    border-bottom: none;
 }
 
 footer h3 {

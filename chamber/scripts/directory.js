@@ -43,7 +43,7 @@ function renderMembers(members) {
         ).join('');//<div><em>${m.industry || ''}</em></div> can use in case that the array is long and do not contain some elements, can be null too
     } else {
         container.innerHTML = members.map(m =>//map for run for every element in the array
-            `<div class="member-card list-info">
+            `<div class="member-card">
                 <img src="${m.image}" alt="${m.name}" loading="lazy"/>
                 <h2>${m.name}</h2>
                 <span>${m.phone}</span>
