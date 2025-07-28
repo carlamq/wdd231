@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashiwa Chamber Of Commerce Homepage</title>
+    <meta name="description" content="Directory of Chamber Members Project Activity">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="icon" href="images/favicon-chamber.ico">
+    <meta property="og:title" content="WDD231 | Kashiwa Chamber Of Commerce | Carla Maetzin Ramirez Quintanar">
+    <meta property="og:description" content="Student project, Kashiwa Chamber of Commerce Homepage.">
+    <meta property="og:image" content="https://carlamq.github.io/wdd231/chamber/images/socialmedia.png">
+    <meta property="og:url" content="https://carlamq.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/chamber-logo.webp" alt="Site Logo" width="120" height="120">
+        <span>WDD231 | Kashiwa Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="herodiv">
+            <picture class="hero-img">
+                <source srcset="images/hero-large.webp" type="image/webp" media="(min-width:550px)">
+                <img src="images/hero-small.webp" alt="Kashiwa Chamber of Commerce - Supporting local businesses" loading="eager" width="460" height="660">
+            </picture>
+            <div class="hero-content">
+                <h1>Welcome to the Kashiwa Chamber of Commerce</h1>
+                <p>Your gateway to local businesses and community resources.</p>
+                <a href="join.html" class="btn">Join Us</a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Home</h1>
+            <div class="content-grid">
+                <section class="events">
+                    <h2>Upcoming Events</h2>
+                    <table class="events-table">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4>Business Networking Event</h4>
+                                </td>
+                                <td>Join us for an evening of networking and collaboration.</td>
+                                <td>October 15, 2025</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Local Business Fair</h4>
+                                </td>
+                                <td>Explore local businesses and discover new opportunities.</td>
+                                <td>January 20, 2026</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Chamber Awards Ceremony</h4>
+                                </td>
+                                <td>Annual recognition of outstanding local businesses.</td>
+                                <td>May 10, 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="weather">
+                    <h2>Current Weather</h2>
+                    <div class="current-weather">
+                        <img id="weather-icon" src="" alt="" width="60" height="60">
+                        <span id="current-temp"></span>
+                        <p id="weather-description"></p>
+                        <p class="location">Kashiwa, Japan</p>
+                    </div>
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-container">
+                        <!-- filling in JavaScript -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container">
+                <!-- filling in JavaScript -->
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h3>Kashiwa Chamber of Commerce</h3>
+            <p>Kashiwa, Chiba, Japan</p>
+            <p>7-1-1 Kashiwa, Chiba 277-0005</p>
+            <p>info@kashiwa-chamber.com</p>
+            <p>Phone: +81-4-7167-1234</p>
+        </section>
+        <section class="social">
+            <a href="https://youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube logo" width="32"
+                    height="32"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linked.svg" alt="linkedin" width="32"
+                    height="32"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="x page logo" width="32" height="32"></a>
+        </section>
+        <section>
+            <p>WDD231 | Class Project</p>
+            <p>Carla Maetzin Ramirez Quintanar</p>
+            <p>&copy; <span id="currentYear"></span> | Kashiwa Chamber of Commerce</p>
+            <p class="last-mod">Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+    
+</html>
