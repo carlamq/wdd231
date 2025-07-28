@@ -47,7 +47,7 @@ function displayCurrentWeather(data) {
     const temp = Math.round(data.main.temp); //data.main.temp comes in decimal, so we round it to the nearest integer
     const description = data.weather[0].description; //data.weather is an array, then take the first element and get the description
     const icon = data.weather[0].icon;
-    const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconSrc = `https://openweathermap.org/img/w/${icon}.png`;
 
     currentTemp.innerHTML = `${temp}&deg;C`; //&deg;C is used to display the degree symbol in HTML
     weatherDescription.textContent = description;
