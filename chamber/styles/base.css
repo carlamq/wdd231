@@ -106,7 +106,7 @@ nav li.current a {
 
 .hero-content {
     position: absolute;
-    top: 0;
+    top: 6%;
     left: 0;
     bottom: 200px;
     display: flex;
