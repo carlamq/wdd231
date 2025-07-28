@@ -43,18 +43,19 @@
             <li><a href="#">Join</a></li>
         </ul>
     </nav>
-    <main>
-        <div class="herodiv">
-            <picture class="hero-img">
-                <source srcset="images/hero-large.webp" type="image/webp" media="(min-width:550px)">
-                <img src="images/hero-small.webp" alt="Kashiwa Chamber of Commerce - Supporting local businesses" fetchpriority="high" width="460" height="660">
-            </picture>
-            <div class="hero-content">
-                <h1>Welcome to the Kashiwa Chamber of Commerce</h1>
-                <p>Your gateway to local businesses and community resources.</p>
-                <a href="join.html" class="btn">Join Us</a>
-            </div>
+    <div class="herodiv">
+        <picture class="hero-img">
+            <source srcset="images/hero-large.webp" type="image/webp" media="(min-width:550px)">
+            <img src="images/hero-small.webp" alt="Kashiwa Chamber of Commerce - Supporting local businesses"
+                fetchpriority="high" width="370" height="560">
+        </picture>
+        <div class="hero-content">
+            <h1>Welcome to the Kashiwa Chamber of Commerce</h1>
+            <p>Your gateway to local businesses and community resources.</p>
+            <a href="join.html" class="btn">Join Us</a>
         </div>
+    </div>
+    <main>
         <div class="content">
             <h1>Home</h1>
             <div class="content-grid">
@@ -96,7 +97,7 @@
                 <section id="weather">
                     <h2>Current Weather</h2>
                     <div class="current-weather">
-                        <img id="weather-icon" src="icon.png" alt="weather icon" width="60" height="60">
+                        <img id="weather-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3C/svg%3E" alt="icon weather" width="60" height="60">
                         <span id="current-temp"></span>
                         <p id="weather-description"></p>
                         <p class="location">Kashiwa, Japan</p>
