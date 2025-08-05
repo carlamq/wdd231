@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashiwa Chamber Of Commerce Join Page</title>
+    <meta name="description" content="Join the Kashiwa Chamber of Commerce">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="icon" href="images/favicon-chamber.ico">
+    <meta property="og:title" content="WDD231 | Kashiwa Chamber Of Commerce | Carla Maetzin Ramirez Quintanar">
+    <meta property="og:description" content="Student project, Kashiwa Chamber of Commerce Join Page.">
+    <meta property="og:image" content="https://carlamq.github.io/wdd231/chamber/images/socialmedia.png">
+    <meta property="og:url" content="https://carlamq.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/memberships.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber-logo.webp" alt="Site Logo" width="120" height="120">
+        <span>WDD231 | Kashiwa Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Join the Kashiwa Chamber of Commerce</h1>
+        <p>Become a member and grow your business with our community!</p>
+        <section class="join-cont">
+            <div class="form-container">
+                <form method="get" action="thankyou.htm" class="membership-form">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="first-name">First Name *<input type="text" name="first-name" title="Enter your first name" id="first-name"
+                            autocomplete="given-name" required></label>
+                        <label for="last-name">Last Name *<input type="text" name="last-name" title="Enter your last name" id="last-name"
+                            autocomplete="family-name" required></label>
+                        <label for="org-title">Organizational Title <!-- A-Za-z is a to z leters, \s spaces, \- hypen to literal -->
+                            <input type="text" name="org-title" title="Enter your title within your organization" id="org-title"
+                                autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Manager, Director"></label>
+                        <label for="email">Email Address *
+                            <input type="email" name="email" title="Enter your email address" id="email" autocomplete="email"
+                                placeholder="example@email.com" required></label>
+                        <label for="phone">Mobile Phone *
+                            <input type="tel" name="phone" title="Enter your mobile phone number" id="phone" autocomplete="tel" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label for="business-name">Business/Organization Name *
+                            <input type="text" name="business-name" title="Enter your business or organization name" id="business-name" autocomplete="organization" required>
+                        </label>
+                        <label for="membership-level">Membership Level *
+                            <select id="membership-level" name="membership-level" title="Select your membership level" required>
+                                <option value="">Select a membership level</option>
+                                <option value="np">NP Membership (Non-Profit - Free)</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <label for="business-description">Business/Organization Description
+                            <textarea name="business-description" title="Describe your business or organization" id="business-description"
+                                rows="4" placeholder="Tell us about your business..."></textarea>
+                        </label>
+                        <input type="hidden" id="timestamp" name="timestamp"> <!-- Hidden field to store the current timestamp -->
+                        <input type="submit" value="Submit Application" class="submit-btn" title="Submit your application">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="membership-cards">
+                <h2>Membership Levels</h2>
+                <div class="cards-grid" id="membership-info"></div>
+            </div>
+        </section>
+        <dialog id="modals-info"></dialog>
+    </main>
+    <footer>
+        <section>
+            <h3>Kashiwa Chamber of Commerce</h3>
+            <p>Kashiwa, Chiba, Japan</p>
+            <p>7-1-1 Kashiwa, Chiba 277-0005</p>
+            <p>info@kashiwa-chamber.com</p>
+            <p>Phone: +81-4-7167-1234</p>
+        </section>
+        <section class="social">
+            <a href="https://youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube logo" width="32"
+                    height="32"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linked.svg" alt="linkedin" width="32"
+                    height="32"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="x page logo" width="32"
+                    height="32"></a>
+        </section>
+        <section>
+            <p>WDD231 | Class Project</p>
+            <p>Carla Maetzin Ramirez Quintanar</p>
+            <p>&copy; <span id="currentYear"></span> | Kashiwa Chamber of Commerce</p>
+            <p class="last-mod">Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

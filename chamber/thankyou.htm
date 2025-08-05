@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Of Commerce Thank you</title>
+    <meta name="description" content="Thank you for your application to the Chamber of Commerce">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="icon" href="images/favicon-chamber.ico">
+    <meta property="og:title" content="WDD231 | Chamber Of Commerce Thank you | Carla Maetzin Ramirez Quintanar">
+    <meta property="og:description" content="Student project, thank you page for chamber members.">
+    <meta property="og:image" content="https://carlamq.github.io/wdd231/chamber/images/socialmedia.png">
+    <meta property="og:url" content="https://carlamq.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber-logo.webp" alt="Site Logo" width="120" height="120">
+        <span>WDD231 | Kashiwa Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="thankyou-title">Thank You for Joining!</h1>
+        <section class="thankyou-container"> 
+            <p>Your application has been successfully submitted. Here's a summary of your information:</p>
+            <div class="form-summary">
+                <h2>Application Summary</h2>
+                <div class="summary-info" id="form-data">
+                    <!-- information from the form -->
+                </div>
+        
+                <div class="next-steps">
+                    <h3>What's Next?</h3>
+                    <ul>
+                        <li>You will receive a confirmation email within 24 hours</li>
+                        <li>Our team will review your application</li>
+                        <li>We'll contact you within 3-5 business days</li>
+                        <li>Welcome to the Kashiwa Chamber of Commerce family!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <a href="index.html" class="return-btn">Return Home</a>
+                <a href="join.html" class="resubmit-btn">Submit Another Application</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>Kashiwa Chamber of Commerce</h3>
+            <p>Kashiwa, Chiba, Japan</p>
+            <p>7-1-1 Kashiwa, Chiba 277-0005</p>
+            <p>info@kashiwa-chamber.com</p>
+            <p>Phone: +81-4-7167-1234</p>
+        </section>
+        <section class="social">
+            <a href="https://youtube.com/" target="_blank"><img src="images/youtube.svg" alt="youtube logo" width="32"
+                    height="32"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linked.svg" alt="linkedin" width="32"
+                    height="32"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="x page logo" width="32"
+                    height="32"></a>
+        </section>
+        <section>
+            <p>WDD231 | Class Project</p>
+            <p>Carla Maetzin Ramirez Quintanar</p>
+            <p>&copy; <span id="currentYear"></span> | Kashiwa Chamber of Commerce</p>
+            <p class="last-mod">Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

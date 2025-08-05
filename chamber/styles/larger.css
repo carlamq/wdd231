@@ -67,4 +67,26 @@
         top: 50%;
         left: 50%;
     }
+    .join-cont {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    .membership-card {
+        padding: .5rem;
+    }
+    .membership-card h3,
+    .membership-card .price {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem 0;
+    }
+    
+    .membership-card p {
+        margin-bottom: 0.8rem;
+        line-height: .8;
+    }
+    .info-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
 }
