@@ -21,7 +21,7 @@ function showList() {
 
 const fetchMembers = async () => {
     try {
-        const response = await fetch('scripts/directory.json');//wait for the fetch to complete
+        const response = await fetch('data/directory.json');//wait for the fetch to complete
         const members = await response.json();//wait for the response to be converted to JSON
         console.log(members);//output the members to the console
         currentMembers = members; // Store the fetched members

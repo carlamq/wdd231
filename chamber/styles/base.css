@@ -564,3 +564,60 @@ p {
     margin-top: 1rem;
     font-size: 2rem;
 }
+
+/****** discover page ******/
+.discover-container {
+    display: grid;
+}
+.discover-grid div {
+    margin: 1rem 8px;
+    border: 1px solid var(--card-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px var(--card-shadow);
+    display: grid;
+    grid-template-areas:
+    "name"
+    "address"
+    "description"
+    "image"
+    "button";
+}
+.discover-grid div h2 {
+    grid-area: name;
+    text-align: center;
+    margin: 1rem 10px;
+}
+.discover-grid p {
+    grid-area: description;
+    margin: 1rem 10px;
+}
+.discover-grid div img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+}
+.discover-grid div address {
+    grid-area: address;
+    margin: 1rem 10px;
+}
+.discover-grid div button {
+    grid-area: button;
+    align-self: start;
+    background: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem auto;
+    transition: background 0.3s ease;
+}
+.discover-grid div button:hover {
+    background: var(--card-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 5px var(--card-shadow);
+    border: #1d3658 solid 1px;
+}

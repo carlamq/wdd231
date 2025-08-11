@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Of Commerce Thank you</title>
-    <meta name="description" content="Thank you for your application to the Chamber of Commerce">
+    <title>Kashiwa Chamber Of Commerce Discovery</title>
+    <meta name="description" content="Discovery Kashiwa Chamber of Commerce">
     <meta name="author" content="Carla Maetzin Ramirez Quintanar">
     <link rel="icon" href="images/favicon-chamber.ico">
-    <meta property="og:title" content="WDD231 | Chamber Of Commerce Thank you | Carla Maetzin Ramirez Quintanar">
-    <meta property="og:description" content="Student project, thank you page for chamber members.">
+    <meta property="og:title" content="WDD231 | Kashiwa Chamber Of Commerce | Carla Maetzin Ramirez Quintanar">
+    <meta property="og:description" content="Student project, Kashiwa Chamber of Commerce Discovery Page.">
     <meta property="og:image" content="https://carlamq.github.io/wdd231/chamber/images/socialmedia.png">
     <meta property="og:url" content="https://carlamq.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/discover.js" type="module" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+    </noscript>
 </head>
 
 <body>
@@ -32,34 +38,21 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discovery</a></li>
             <li><a href="directory.html">Business Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
-        <h1 class="thankyou-title">Thank You for Joining!</h1>
-        <section class="thankyou-container"> 
-            <p>Your application has been successfully submitted. Here's a summary of your information:</p>
-            <div class="form-summary">
-                <h2>Application Summary</h2>
-                <div class="summary-info" id="form-data">
-                    <!-- information from the form -->
-                </div>
-        
-                <div class="next-steps">
-                    <h3>What's Next?</h3>
-                    <ul>
-                        <li>You will receive a confirmation email within 24 hours</li>
-                        <li>Our team will review your application</li>
-                        <li>We'll contact you within 3-5 business days</li>
-                        <li>Welcome to the Kashiwa Chamber of Commerce family!</li>
-                    </ul>
-                </div>
+        <h2>Discover Kashiwa</h2>
+        <p>Explore the attractions and hidden gems of Kashiwa, Chiba.</p>
+        <div id="sidebar-message" class="visit-message">
+            <!-- localStorage messages will display -->
+        </div>
+        <div class="discover-container">
+            
+            <div class="discover-grid">
+                <!-- Attraction cards will be here -->
             </div>
-            <div class="action-buttons">
-                <a href="index.html" class="return-btn">Return Home</a>
-                <a href="join.html" class="resubmit-btn">Submit Another Application</a>
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
         <section>

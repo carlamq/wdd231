@@ -3,7 +3,7 @@ const spotlightContainer = document.getElementById('spotlight-container');
 //Obtain the members gold and silver randomly
 async function getSpotlightMembers() {
     try {
-        const response = await fetch('scripts/directory.json');
+        const response = await fetch('data/directory.json');
         if (response.ok) {
             const members = await response.json();
 
