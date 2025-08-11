@@ -596,6 +596,7 @@ p {
     grid-area: image;
     width: 100%;
     height: auto;
+    transition: all 0.4s ease;
 }
 .discover-grid div address {
     grid-area: address;
