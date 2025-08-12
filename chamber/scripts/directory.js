@@ -41,7 +41,7 @@ function levelLabel(level) {
 }
 
 function renderMembers(members) {
-    // ✅ Simplificar la lógica - ahora usar las clases CSS directamente
+
     if (container.classList.contains('grid')) {
         container.innerHTML = members.map(m =>
             `<div class="member-card">
