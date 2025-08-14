@@ -392,13 +392,6 @@ main {
     background: #fafafa;
 }
 
-.contact-form label[for="information"]:hover,
-.contact-form label[for="reservation"]:hover,
-.contact-form label[for="complaint"]:hover,
-.contact-form label[for="suggestion"]:hover {
-    border-color: var(--accent-color);
-}
-
 .contact-form textarea {
     min-height: 120px;
     line-height: 1.6;
@@ -482,7 +475,7 @@ footer a:hover {
 }
 
 /*******MODAL *****/
-.modal {
+#tour-modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -497,11 +490,11 @@ footer a:hover {
     overflow: hidden;
 }
 
-.modal::backdrop {
+#tour-modal::backdrop {
     background: rgba(0, 0, 0, 0.6);
 }
 
-.modal img {
+#tour-modal img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -509,7 +502,7 @@ footer a:hover {
     border-radius: 10px;
 }
 
-.modal h2 {
+#tour-modal h2 {
     font-family: 'Italiana', serif;
     color: var(--primary-color);
     font-size: 1.8rem;
@@ -518,14 +511,14 @@ footer a:hover {
     padding-bottom: 0.5rem;
 }
 
-.modal .price {
+#tour-modal .price {
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--secondary-color);
     margin-bottom: 1rem;
 }
 
-.modal p {
+#tour-modal p {
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -552,20 +545,14 @@ footer a:hover {
     transform: scale(1.1);
 }
 
-.modal-reserve-btn:hover {
-    background: var(--secondary-color);
-    color: white;
-    transform: translateY(-2px);
-}
-
-.modal[open] {
+#tour-modal[open] {
     animation: modalFadeIn 0.3s ease-out;
 }
-.modal[open] {
+#tour-modal[open] {
     animation: popSlide 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.modal[open] {
+#tour-modal[open] {
     animation: fadeBlur 0.5s ease-out;
 }
 
