@@ -8,14 +8,14 @@
     .hamburger {
         display: none;
     }
-    nav {
+    #nav-bar {
         display: block;
     }
-    nav ul {
+    #nav-bar ul {
         display: flex;
         justify-content: space-around;
     }
-    nav a {
+    #nav-bar a {
         border: none;
     }
     .hero-content {
@@ -44,7 +44,7 @@
     .intro {
         margin-top: 5rem;
     }
-    .spotlight #spotlight-container,
+    #spotlight-container,
     .tours-grid {
         grid-template-columns: repeat(3, 1fr);
     }

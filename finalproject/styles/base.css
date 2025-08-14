@@ -60,12 +60,12 @@ header span {
 }
 
 /*************** NAVIGATION ******************/
-nav {
+#nav-bar {
     display: none;
     background-color: var(--accent-color);
 }
 
-nav.show {
+#nav-bar.show {
     display: block;
     animation: slideDown 0.3s ease;
 }
@@ -74,11 +74,11 @@ nav.show {
     to {opacity: 1; transform: translateY(0);}
 }
 
-nav ul {
+#nav-bar ul {
     list-style-type: none;
 }
 
-nav a {
+#nav-bar a {
     display: block;
     padding: 1rem 10px;
     color: var(--primary-color);
@@ -88,12 +88,12 @@ nav a {
     border-bottom: solid 1px #dddd;
 }
 
-nav a:hover {
+#nav-bar a:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
 }
 
-nav li.current a {
+#nav-bar li.current a {
     background-color: var(--accent-color-dark);
     color: var(--background-color);
 }
@@ -238,13 +238,13 @@ main {
 
 /************ SPOTLIGHTS **********/
 .spotlights,
-.tour-card,
-.spotlights-c {
+.tour-card {
     padding: 4rem 2rem;
     text-align: center
 }
 
 #spotlight-container,
+#spotlight-container-contact,
 .tours-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -440,13 +440,13 @@ main {
     gap: 1rem;
     margin-bottom: 2rem;
 }
-.next-steps {
+#next-steps {
     border-top: #085e73 solid 1px;
 }
-.next-steps h3 {
+#next-steps h3 {
     margin-top: 1rem;
 }
-.next-steps ul {
+#next-steps ul {
     list-style-type: decimal;
     padding: 1rem;
     margin: 1rem;
@@ -464,11 +464,11 @@ footer {
     text-align: center;
 }
 
-.social {
+#social {
     margin-bottom: 2rem;
 }
 
-.social a {
+#social a {
     margin: 0 1rem;
     transition: transform 0.3s ease;
 }

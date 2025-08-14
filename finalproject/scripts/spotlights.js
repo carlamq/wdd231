@@ -1,4 +1,5 @@
 const spotlightContainer = document.getElementById('spotlight-container');
+const spotlightContainerContact = document.getElementById('spotlight-container-contact');
 
 //Using Fetch API
 async function getSpotlightTours() {
@@ -32,7 +33,13 @@ function displaySpotlights(tours) {
         `;
     }).join('');
 
-    spotlightContainer.innerHTML = spotlightHTML;
+    if (spotlightContainer) {
+        spotlightContainer.innerHTML = spotlightHTML;
+    }
+
+    if (spotlightContainerContact) {
+        spotlightContainerContact.innerHTML = spotlightHTML;
+    }
 }
 
 getSpotlightTours();
