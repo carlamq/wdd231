@@ -3,7 +3,7 @@
         "name": "Traditional Kyoto",
         "address": "Kyoto, Japan",
         "description": "Visit historic temples, zen gardens, and participate in an authentic tea ceremony.",
-        "image": "images/tour-kyoto.jpg",
+        "image": "images/tour-kyoto.webp",
         "price": "¥12,000",
         "bestseller": true
     },
@@ -11,7 +11,7 @@
         "name": "Tokyo Food Tour",
         "address": "Tokyo, Japan",
         "description": "Taste ramen, sushi, and street food with a local guide who knows the hidden gems.",
-        "image": "images/tokyo-food.jpg",
+        "image": "images/tokyo-food.webp",
         "price": "¥9,500",
         "bestseller": true
     },
@@ -19,7 +19,7 @@
         "name": "Hokkaido Adventure",
         "address": "Hokkaido, Japan",
         "description": "Explore national parks, hot springs, and breathtaking mountain landscapes.",
-        "image": "images/hokkaido-nature.jpg",
+        "image": "images/hokkaido-nature.webp",
         "price": "¥15,800",
         "bestseller": false
     },
@@ -27,7 +27,7 @@
         "name": "Cultural Nara Tour",
         "address": "Nara, Japan",
         "description": "Walk among sacred deer and discover centuries-old temples and traditional crafts.",
-        "image": "images/nara-deer.jpg",
+        "image": "images/nara-deer.webp",
         "price": "¥8,000",
         "bestseller": false
     },
@@ -35,7 +35,7 @@
         "name": "Tropical Okinawa",
         "address": "Okinawa, Japan",
         "description": "Relax on crystal-clear beaches, with snorkeling and island culture experiences.",
-        "image": "images/okinawa-beach.jpg",
+        "image": "images/okinawa-beach.webp",
         "price": "¥14,200",
         "bestseller": false
     },
@@ -43,7 +43,7 @@
         "name": "Hiking in the Japanese Alps",
         "address": "Nagano, Japan",
         "description": "Scenic trails, charming mountain villages, and authentic regional cuisine.",
-        "image": "images/japan-alps.jpg",
+        "image": "images/japan-alps.webp",
         "price": "¥13,600",
         "bestseller": false
     },
@@ -51,7 +51,7 @@
         "name": "Samurai Experience in Kanazawa",
         "address": "Kanazawa, Japan",
         "description": "Wear samurai armor, handle katanas, and learn about the feudal era.",
-        "image": "images/kanazawa-samurai.jpg",
+        "image": "images/kanazawa-samurai.webp",
         "price": "¥11,000",
         "bestseller": true
     },
@@ -59,7 +59,7 @@
         "name": "Nebuta Festival in Aomori",
         "address": "Aomori, Japan",
         "description": "Enjoy one of Japan's most vibrant festivals with giant floats, music, and night dancing.",
-        "image": "images/aomori-festival.jpg",
+        "image": "images/aomori-festival.webp",
         "price": "¥10,500",
         "bestseller": false
     },
@@ -67,7 +67,7 @@
         "name": "Hiroshima — Peace and Memory",
         "address": "Hiroshima, Japan",
         "description": "Guided visit to the Peace Memorial Park, museums, and a moment for reflection.",
-        "image": "images/hiroshima-peace.jpg",
+        "image": "images/hiroshima-peace.webp",
         "price": "¥7,900",
         "bestseller": false
     },
@@ -75,7 +75,7 @@
         "name": "Takayama — Market and Craftsmanship",
         "address": "Takayama, Japan",
         "description": "Discover morning markets, artisan workshops, and the city's traditional architecture.",
-        "image": "images/takayama-market.jpg",
+        "image": "images/takayama-market.webp",
         "price": "¥8,500",
         "bestseller": false
     },
@@ -83,7 +83,7 @@
         "name": "Mount Fuji Day Trip",
         "address": "Mount Fuji Region, Japan",
         "description": "Guided tour with scenic stops and optional hikes around the base of the mountain.",
-        "image": "images/mtfuji-day.jpg",
+        "image": "images/mtfuji-day.webp",
         "price": "¥10,000",
         "bestseller": false
     },
@@ -91,7 +91,7 @@
         "name": "Modern Yokohama & Chinatown",
         "address": "Yokohama, Japan",
         "description": "Explore modern districts, the port area, and Japan's largest Chinatown.",
-        "image": "images/yokohama.jpg",
+        "image": "images/yokohama.webp",
         "price": "¥7,200",
         "bestseller": false
     },
@@ -99,7 +99,7 @@
         "name": "Sapporo — Winter and Cuisine",
         "address": "Sapporo, Hokkaido",
         "description": "Winter experiences, festive markets, and the famous miso ramen of Sapporo.",
-        "image": "images/sapporo-winter.jpg",
+        "image": "images/sapporo-winter.webp",
         "price": "¥13,000",
         "bestseller": false
     },
@@ -107,7 +107,7 @@
         "name": "Naoshima — Contemporary Art",
         "address": "Naoshima, Kagawa Prefecture",
         "description": "Art island with outdoor installations and cutting-edge galleries.",
-        "image": "images/naoshima-art.jpg",
+        "image": "images/naoshima-art.webp",
         "price": "¥12,500",
         "bestseller": false
     },
@@ -115,7 +115,7 @@
         "name": "Nikko — Temples and Waterfalls",
         "address": "Nikko, Tochigi",
         "description": "Visit ornate shrines, UNESCO-listed temples, and nearby nature spots.",
-        "image": "images/nikko-temples.jpg",
+        "image": "images/nikko-temples.webp",
         "price": "¥9,800",
         "bestseller": false
     }

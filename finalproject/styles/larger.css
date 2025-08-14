@@ -1,5 +1,60 @@
 @media (min-width: 640px) {
+    header {
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a {
+        border: none;
+    }
+    .hero-content {
+        background-color: transparent;
+        color: var(--background-color);
+    }
+    .hero-content h1 {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        text-shadow: 4px 4px 8px black;
+    }
+    .herodiv {
+        position: relative;
+        height: 600px;
+        min-height: 600px;
+        overflow: hidden;
+    }
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .how-it-works {
+        margin-top: 0%;
+        max-width: 500px;
+    }
+    .intro {
+        margin-top: 5rem;
+    }
+    .spotlight #spotlight-container,
     .tours-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-info {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .form-contact {
+        grid-template-columns: 700px 1fr;
+        gap: 1rem;
     }
 }

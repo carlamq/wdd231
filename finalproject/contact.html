@@ -38,71 +38,74 @@
     </header>
     <nav id="nav-bar">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Contact Us</h1>
-        <p>If you have any questions or inquiries, feel free to reach out to us!</p>
-        <p>For reservations fill the form as well, just mark the 'Reservation' checkbox. We'll contact you as soon as possible.</p>
-        <section class="contact">
-            <div class="form-container">
-                <form method="get" action="thankyou.htm" class="contact-form">
-                    <fieldset>
-                        <legend>Personal Information</legend>
-                        <label for="first-name">First Name *<input type="text" name="first-name" title="Enter your first name"
-                                id="first-name" autocomplete="given-name" required></label>
-                        <label for="last-name">Last Name *<input type="text" name="last-name" title="Enter your last name"
-                                id="last-name" autocomplete="family-name" required></label>
-                        <label for="email">Email Address *
-                            <input type="email" name="email" title="Enter your email address" id="email" autocomplete="email"
-                                placeholder="example@email.com" required></label>
-                        <label for="phone">Mobile Phone
-                            <input type="tel" name="phone" title="Enter your mobile phone number" id="phone" autocomplete="tel"></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Contact Form</legend>
-                        <div>Why do you contact us?</div>
-                        <label for="information">
-                            <input type="radio" name="contact-reason" title="General Information" id="information" value="information" required>
-                            General Information / Question
-                        </label>
-                        
-                        <label for="reservation">
-                            <input type="radio" name="contact-reason" title="Reservation" id="reservation" value="reservation" required>
-                            Reservation Request
-                        </label>
-                        
-                        <label for="complaint">
-                            <input type="radio" name="contact-reason" title="Complaint" id="complaint" value="complaint" required>
-                            Complaint / Issue
-                        </label>
-                        
-                        <label for="suggestion">
-                            <input type="radio" name="contact-reason" title="Suggestion" id="suggestion" value="suggestion" required>
-                            Suggestion / Feedback
-                        </label>
-                        <label for="message">Message *
-                            <textarea name="message" title="Enter your message or question" id="message" rows="5"
-                                placeholder="Tell us how we can help you..." required></textarea>
-                        </label>
-                        
-                        <input type="hidden" id="timestamp" name="timestamp">
-                        <input type="submit" value="Send Message" class="submit-btn" title="Send your message">
-                        </label>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-        <section class="spotlights">
-            <h2>Best Seller Experiences</h2>
-            <div id="spotlight-container">
-                <!-- filling in JavaScript -->
-            </div>
-            <a href="tours.html" id="view-all-btn" class="btn">View All Experiences</a>
-        </section>
+        <div class="content-tours">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+            <p>For reservations fill the form as well, just mark the 'Reservation' checkbox. We'll contact you as soon as possible.</p>
+        </div>
+        <div class="form-contact">
+            <section class="contact">
+                <div class="form-container">
+                    <form method="get" action="thankyou.html" class="contact-form">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label for="first-name">First Name *<input type="text" name="first-name" title="Enter your first name"
+                                    id="first-name" autocomplete="given-name" required></label>
+                            <label for="last-name">Last Name *<input type="text" name="last-name" title="Enter your last name"
+                                    id="last-name" autocomplete="family-name" required></label>
+                            <label for="email">Email Address *
+                                <input type="email" name="email" title="Enter your email address" id="email" autocomplete="email"
+                                    placeholder="example@email.com" required></label>
+                            <label for="phone">Mobile Phone
+                                <input type="tel" name="phone" title="Enter your mobile phone number" id="phone" autocomplete="tel"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                            <div>Why do you contact us?</div>
+                            <label for="information">
+                                <input type="radio" name="contact-reason" title="General Information" id="information" value="information" required>
+                                General Information / Question
+                            </label>
+
+                            <label for="reservation">
+                                <input type="radio" name="contact-reason" title="Reservation" id="reservation" value="reservation" required>
+                                Reservation Request
+                            </label>
+
+                            <label for="complaint">
+                                <input type="radio" name="contact-reason" title="Complaint" id="complaint" value="complaint" required>
+                                Complaint / Issue
+                            </label>
+
+                            <label for="suggestion">
+                                <input type="radio" name="contact-reason" title="Suggestion" id="suggestion" value="suggestion" required>
+                                Suggestion / Feedback
+                            </label>
+                            <label for="message">Message *
+                                <textarea name="message" title="Enter your message or question" id="message" rows="5"
+                                    placeholder="Tell us how we can help you..." required></textarea>
+                            </label>
+
+                            <input type="hidden" id="timestamp" name="timestamp">
+                            <input type="submit" value="Send Message" class="submit-btn" title="Send your message">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <section class="spotlights-c">
+                <h2>Best Seller Experiences</h2>
+                <div id="spotlight-container">
+                    <!-- filling in JavaScript -->
+                </div>
+                <a href="tours.html" id="view-all-btn" class="btn">View All Experiences</a>
+            </section>
+        </div>
     </main>
     <footer>
         <section class="social">
@@ -110,10 +113,9 @@
                     height="32"></a>
             <a href="https://www.linkedin.com/" target="_blank"><img src="images/linked.svg" alt="linkedin" width="32"
                     height="32"></a>
-            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="x page logo" width="32"
-                    height="32"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/x.svg" alt="x page logo" width="32" height="32"></a>
         </section>
-        <section>
+        <section class="footer-info">
             <p>Kuzira Experiences</p>
             <p>Tokyo, Japan</p>
             <p>&copy; 2025 | Kuzira Experiences</p>
