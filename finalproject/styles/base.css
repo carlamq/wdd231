@@ -38,7 +38,7 @@ header img {
 header span {
     font-size: 2rem;
     color: var(--text-color);
-    font-family: 'Italiana',serif;
+    font-family: 'Italiana',sans-serif;
     font-weight: 1000;
     letter-spacing: 1.3px;
 }
@@ -129,7 +129,7 @@ header span {
 .hero-content h1,
 .spotlights h2,
 .thankyou-title {
-    font-family: 'Italiana', serif;
+    font-family: 'Italiana', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 1000;
@@ -184,7 +184,7 @@ main {
     display: grid;
 }
 #content h1 {
-    font-family: 'Italiana', serif;
+    font-family: 'Italiana', sans-serif;
     font-size: 2rem;
     margin-bottom: 1em;
     border-bottom: var(--accent-color) solid 2px;
@@ -206,7 +206,7 @@ main {
 }
 
 #content h2 {
-    font-family: 'Italiana', serif;
+    font-family: 'Italiana', sans-serif;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     color: var(--accent-color-dark);
@@ -229,7 +229,7 @@ main {
 
 }
 #content-tours h1 {
-    font-family: 'Italiana', serif;
+    font-family: 'Italiana', sans-serif;
     font-size: 3rem;
     margin-bottom: 1em;
     border-bottom: var(--accent-color) solid 2px;
@@ -333,7 +333,7 @@ main {
 }
 
 .contact-form legend {
-    font-family: 'Italiana', serif;
+    font-family: 'Italiana', sans-serif;
     font-size: 1.5rem;
     color: var(--background-color);
     font-weight: bold;
@@ -503,7 +503,7 @@ footer a:hover {
 }
 
 #tour-modal h2 {
-    font-family: 'Italiana', serif;
+    font-family: 'Italiana', sans-serif;
     color: var(--primary-color);
     font-size: 1.8rem;
     margin-bottom: 1rem;
