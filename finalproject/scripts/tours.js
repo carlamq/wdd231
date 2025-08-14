@@ -45,9 +45,6 @@ function displayTourDetails(tour) {
     `;
     modalContainer.showModal();
 
-    // Save last viewed tour in localStorage
-    localStorage.setItem('lastViewedTour', tour.name);
-
     document.getElementById('close-modal').addEventListener("click", () => {
         modalContainer.close();
     });
